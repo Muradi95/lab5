@@ -51,10 +51,24 @@ public class Lab5_skel {
 
     // -----------  1 --------------------------
 
-    public static void doCollatz() {
+  public static void doCollatz(int n, int m) {
 
+        while(n < m){
+
+            int i = n;
+           System.out.print(i + " ");
+
+            while (i != 1) {
+                if (i % 2 == 0)
+                    i = i / 2;
+                else
+                    i = 3 * i + 1;
+                System.out.print(i + " ");
+            }
+            n = n+1;
+            System.out.println();
+        }
     }
-
     // -----------------  3 ------------------------------
 
 
